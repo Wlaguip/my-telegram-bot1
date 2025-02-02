@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram Web App</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            text-align: center;
+        }
+        input, button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Введите ваше имя</h1>
+    <input type="text" id="nameInput" placeholder="Ваше имя">
+    <button onclick="sendData()">Отправить</button>
+
+    <script>
+        function sendData() {
+            const name = document.getElementById('nameInput').value;
+            if (name) {
+                // Отправляем данные в Telegram бот
+                Telegram.WebApp.sendData(name);
+            } else {
+                alert('Пожалуйста, введите ваше имя!');
+            }
+        }
+    </script>
+</body>
+</html>
