@@ -1,7 +1,7 @@
 {
-    "url": "https://your-app.com",
+    "url": "https://my-telegram-bot1.vercel.app",
     "name": "TON Mini App",
-    "iconUrl": "https://your-app.com/assets/icon.png",
-    "termsOfUseUrl": "https://your-app.com/terms",
-    "privacyPolicyUrl": "https://your-app.com/privacy"
+    "iconUrl": "https://my-telegram-bot1.vercel.app/assets/icon.png",
+    "termsOfUseUrl": "https://my-telegram-bot1.vercel.app/terms",
+    "privacyPolicyUrl": "https://my-telegram-bot1.vercel.app/privacy"
 }

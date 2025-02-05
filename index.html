@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TON Mini App</title>
-    <link rel="stylesheet" href="styles/style.css"> <!-- Подключение CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>TON Mini App</h1>
-    <button id="connect-wallet">Подключить кошелёк</button>
-    <p id="wallet-status">Кошелёк не подключён</p>
-    <div id="referral-section" style="display: none;">
-        <h2>Реферальная программа</h2>
-        <p>Ваша реферальная ссылка: <span id="referral-link"></span></p>
+    <div class="container">
+        <img src="assets/logo.png" alt="Logo" class="logo">
+        <h1>TON Mini App</h1>
+        <button id="connect-wallet">Подключить кошелёк</button>
+        <p id="wallet-status">Кошелёк не подключён</p>
+        <div id="referral-section" class="hidden">
+            <h2>Реферальная программа</h2>
+            <p>Ваша реферальная ссылка: <span id="referral-link"></span></p>
+        </div>
     </div>
 
-    <!-- Подключение TON Connect SDK -->
     <script src="https://unpkg.com/@tonconnect/sdk/dist/tonconnect-sdk.min.js"></script>
-    <!-- Подключение основного JavaScript-файла -->
     <script src="app.js"></script>
 </body>
 </html>
